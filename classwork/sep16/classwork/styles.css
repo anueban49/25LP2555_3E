@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 5%;
+  gap: 50px;
+}
+.button {
+  width: 200px;
+  height: 100px;
+  border-radius: 30px;
+  background-color: rgb(136, 124, 205);
+  border: 3px solid rgb(40, 48, 101);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  scale: 150%;
+  background-color: rgb(40, 48, 101);
+  color: white;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 3s;
+  transition-property: all;
+}
+.button:clic
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: circlemove;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes circlemove {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+.loadingcircle {
+    width: 200px;
+    height: 200px;
+    border: 20px solid gray;
+    border-radius: 100px;
+    border-style: ridge;
+    border-bottom-color: darkgrey;
+    
+    animation-name: loadingcircle;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes loadingcircle {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
+}
+.fadecircle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: rgb(255, 192, 203 );
+    animation-name: fadecircle;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+@keyframes fadecircle {
+    0% {scale: 70%}
+    50% {scale: 50%;
+    background-color:rgb(255, 192, 203, 0.8);}
+    100% {scale: 120%;
+    background-color: rgb(255, 192, 203, 0.2);}
+        
+}
+.loadingdots {
+    width: 300px;
+    height: 100px;
+    padding: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+}
+.dot {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+}

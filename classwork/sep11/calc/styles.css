@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    padding: 48px;
+    gap: 48px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.box {
+    width: calc((100vw - 240px) / 4);
+    background-color: red;
+    height: 200px;
+}

@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(255, 221, 243);
+    font-weight: 100;
+    font-family: "Inter" serif;
+    text-align: center;
+}
+h1 {
+    color: rgb(126, 67, 77);
+}
+
+.element_container {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    border: solid black;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory x;
+    scroll-snap-align: initial;
+}
+.element_box {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.elements {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    background-color: rgba(150, 150, 229, 0.57);
+    border-radius: 30%;
+    border: 5px transparent;
+    scroll-snap-align: center;
+    align-items: center;
+}
+.elements:hover {
+    border-radius: 20%;
+    transition: 1s;
+}
+
+.sliderbar {
+    width: 100vw;
+    height: 500px;
+    border: dashed rgb(232, 141, 157);
+    overflow: hidden;
+}
+.sliderbox {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    gap:12px;
+    animation: slid 3s linear infinite;
+    
+}
+.skiiers {
+    width: 500px;
+    height: inherit;
+    background-color: blanchedalmond;
+}
+@keyframes slid {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(calc(--width*10+--gap*9));
+    }
+}
