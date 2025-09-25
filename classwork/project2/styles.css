@@ -61,7 +61,7 @@ b {
   text-align: center;
   align-items: center;
   line-height: 32px;
-  gap: 20px;
+  row-gap: 25px;
 }
 
 .main_banner:nth-child(1) {
@@ -105,6 +105,15 @@ h3 {
   border: 1px solid #0071e3;
   background-color: #0071e3;
   color: white;
+}
+.button:hover {
+  cursor: pointer;
+}
+#Store {
+  color: #0090f7;
+}
+#Store:hover {
+  cursor: pointer;
 }
 
 #purchase {
@@ -188,36 +197,49 @@ p4 {
 /*sliding banners*/
 .carousel {
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
 }
 .carousel_bar {
     width: fit-content;
-    height: 48rem;
     gap: 10px;
     display: flex;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
 }
 .carousel_items {
-    width: 100%;
-    height: 48rem;
-    gap: 12px;
-    background-size: cover;
+    position: relative;
+    aspect-ratio: 16/9;
+    flex: 1 0 80%;
+    object-fit: fill;
     scroll-snap-align: center;
 }
-
-.carousel_items:nth-child(1) {
-    background-image: url(./images/posters/napoleon.jpg);
+.media_desc {
+  position: absolute;
+  width: 100%;
+  bottom: 38px;
+  left: 47px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.5em;
 }
-.carousel_items:nth-child(2) {background-image: url(./images/posters/bad-monkey.jpg)}
-.carousel_items:nth-child(3) {background-image: url(./images/posters/instigators.jpg)}
-.carousel_items:nth-child(4) {background-image: url(./images/posters/k-pop-idols.jpg)}
-.carousel_items:nth-child(5) {background-image: url(./images/posters/season-pass.jpg)}
-.carousel_items:nth-child(6) {background-image: url(./images/posters/pressumed-innocent.jpg)}
-.carousel_items:nth-child(7) {background-image: url(./images/posters/pachinko.jpg)}
-.carousel_items:nth-child(8) {background-image: url(./images/posters/baseball.jpg)}
-.carousel_items:nth-child(9) {background-image: url(./images/posters/lady-in-the-lake.jpg)}
-.carousel_items:nth-child(10) {background-image: url(./images/posters/morning-show.jpg)}
+media_name {
+  color: white;
+}
+.stream_button {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+}
+.stream_button:hover {
+  cursor: pointer;
+}
+
+
+
 
 /* bullets*/
 
@@ -235,27 +257,75 @@ p4 {
   border-radius: 50%;
   margin-inline: 7px;
 }
+
+
 /*moving footer banners*/
 .movingfooter {
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
+  scrollbar-width: none;
 }
 .slider_box {
-  width: fit-content;
+  width: calc(25vw * 10);
   display: flex;
-  gap: 12px;
+  gap: 0.5em;
   animation: sliderbox 20s linear infinite;
 }
-.sliding_banner {
-  width: 400px;
-  height: 25vh;
-  background-color: rgba(201, 255, 255, 0.719);
+.slider_box:hover {
+  animation-play-state: paused;
+  filter: grayscale(100%);
+  transition: 0.5s;
+  .sliding_banner:hover {
+    filter: grayscale(0%);
+    .function_slider {
+      visibility: visible;
+      transition: 10s;
+  }
 }
-@keyframes sliderbox {
+}
+
+.sliding_banner {
+  position: relative;
+  aspect-ratio: 2/1;
+  flex: 1 0 25vw;
+}
+
+
+.background_slider {
+  width: 100%;
+  height: 100%;
+}
+.function_slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(32, 32, 32, 0.357);
+  visibility: hidden;
+}
+
+.slider_button {
+  background-color: white;
+  padding: 0.6em 0.9em;
+  border-radius: 1em;
+  font-size: 0.7em;
+}
+
+
+
+
+/* @keyframes sliderbox {
   0% {
     transform: translateX(0px);
   }
   to {
-    transform: translateX(-1000px);
+    transform: translateX(calc(-100% + 100vw));
+  }
+} */
+.sliding_banner:hover {
+  .listen_button {
+    visibility: visible;
   }
 }

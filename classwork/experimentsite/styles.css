@@ -2,70 +2,91 @@
     box-sizing: border-box;
     margin: 0;
     background-color: rgb(255, 221, 243);
-    font-weight: 100;
-    font-family: "Inter" serif;
     text-align: center;
+    align-items: center;
 }
 h1 {
     color: rgb(126, 67, 77);
 }
 
 .element_container {
-    width: 90%;
-    height: 300px;
     display: flex;
     border: solid black;
-    overflow-x: scroll;
+    overflow-x: auto;
+    scrollbar-width: none;
     scroll-behavior: smooth;
     scroll-snap-type: mandatory x;
-    scroll-snap-align: initial;
 }
 .element_box {
+    padding: 20px 30px;
     width: fit-content;
     display: flex;
-    align-items: center;
+    gap: 20px;
 }
 
 .elements {
     width: 200px;
     height: 200px;
     margin: 10px;
-    position: relative;
-    background-color: rgba(150, 150, 229, 0.57);
+    background-color: rgb(150, 150, 229);
+    opacity: 0.5;
     border-radius: 30%;
     border: 5px transparent;
-    scroll-snap-align: center;
     align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
 }
 .elements:hover {
-    border-radius: 20%;
+    opacity: 1;
     transition: 1s;
 }
 
 .sliderbar {
     width: 100vw;
     height: 500px;
-    border: dashed rgb(232, 141, 157);
+    border: 10px solid rgb(232, 141, 157);
+    border-radius: 5em;
+    padding: 2em;
     overflow: hidden;
 }
 .sliderbox {
-    width: fit-content;
+    width: 640vw;
     height: 100%;
     display: flex;
-    gap:12px;
-    animation: slid 3s linear infinite;
-    
+    gap:20px;
+    animation: slid 24s linear infinite;
+}
+.sliderbox:hover {
+    animation-play-state: paused;
 }
 .skiiers {
-    width: 500px;
-    height: inherit;
-    background-color: blanchedalmond;
+    width: 80vw;
+    height: 70%;
+    background-color: rgba(214, 160, 241, 0.778);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
 }
+h3 {
+    background-color: transparent;
+    font-size: 5em;
+}
+
 @keyframes slid {
     from {
         transform: translateX(0px);
     }
     to {
-        transform: translateX(calc(--width*10+--gap*9));
+        transform: translateX(calc(-100% + 100vw));
     }
+}
+.skiiers:hover {
+    background-color: rgb(255, 176, 241);
+    transition: 1s;
+    color: aliceblue;
+}
+h3:hover {
+    cursor: pointer;
 }

@@ -1,0 +1,28 @@
+* {
+    margin: 10px;
+}
+h1 {
+    size: 24px;
+    padding: 50px 100px 50px;
+}
+.container {
+    background-color: black;
+    color: white;
+    padding-left: 50px;
+}
+.box {
+    width: 70%;
+    height: 20%;
+    
+    
+}
+h1 {
+    size: 24px;
+    text-decoration-thickness: 1px;
+}
+h2 {
+    size: 20px;
+}
+div {
+    margin: 10px;
+}

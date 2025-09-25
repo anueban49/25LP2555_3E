@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "onWindowChange",
+    "workbench.colorTheme": "Default Dark Modern",
+    "editor.mouseWheelZoom": true,
+    "workbench.preferredHighContrastLightColorTheme": "Monokai"
+}

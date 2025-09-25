@@ -1,0 +1,19 @@
+.box {
+    width: 700px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 30px 100px 30px 100px;;
+}
+
+.yel {
+    background-color: antiquewhite
+}
+.gre {
+    background-color: rgb(191, 220, 161);
+}
+.blu {
+    background-color: rgb(129, 161, 212);
+}
+div {
+    margin: 60px;
+}
