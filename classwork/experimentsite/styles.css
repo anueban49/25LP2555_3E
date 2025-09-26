@@ -62,7 +62,7 @@ h1 {
 .skiiers {
     width: 80vw;
     height: 70%;
-    background-color: rgba(214, 160, 241, 0.778);
+    background-color: rgb(214, 160, 241);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -70,7 +70,9 @@ h1 {
     color: transparent;
 }
 h3 {
-    background-color: transparent;
+    padding: 0px 1.5em;
+    border-radius: 1em;
+    background-color: rgb(214, 160, 241);
     font-size: 5em;
 }
 
@@ -85,8 +87,9 @@ h3 {
 .skiiers:hover {
     background-color: rgb(255, 176, 241);
     transition: 1s;
-    color: aliceblue;
+    color: black;
 }
 h3:hover {
     cursor: pointer;
+    background-color: white;
 }

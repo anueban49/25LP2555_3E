@@ -251,8 +251,8 @@ media_name {
   justify-content: center;
 }
 .bullet {
-  width: 8px;
-  height: 8px;
+  width: 1em;
+  height: 1em;
   background-color: gray;
   border-radius: 50%;
   margin-inline: 7px;
@@ -262,70 +262,90 @@ media_name {
 /*moving footer banners*/
 .movingfooter {
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: auto;
   scrollbar-width: none;
 }
 .slider_box {
-  width: calc(25vw * 10);
+  width: fit-content;
   display: flex;
+  align-items: stretch;
   gap: 0.5em;
   animation: sliderbox 20s linear infinite;
 }
 .slider_box:hover {
   animation-play-state: paused;
-  filter: grayscale(100%);
-  transition: 0.5s;
-  .sliding_banner:hover {
-    filter: grayscale(0%);
-    .function_slider {
-      visibility: visible;
-      transition: 10s;
-  }
-}
+  filter: grayscale(1);
 }
 
 .sliding_banner {
   position: relative;
   aspect-ratio: 2/1;
-  flex: 1 0 25vw;
+  flex: 1 0 25%;
+  display: flex;
 }
 
-
-.background_slider {
-  width: 100%;
-  height: 100%;
-}
-.function_slider {
+#listen-button_screen {
   position: absolute;
   width: 100%;
   height: 100%;
-  display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(32, 32, 32, 0.357);
-  visibility: hidden;
+  display: none;
 }
-
-.slider_button {
+.listen_button {
+  padding: 0.7em 0.5em;
   background-color: white;
-  padding: 0.6em 0.9em;
   border-radius: 1em;
-  font-size: 0.7em;
+  color: black;
 }
-
-
-
-
-/* @keyframes sliderbox {
-  0% {
-    transform: translateX(0px);
-  }
-  to {
-    transform: translateX(calc(-100% + 100vw));
-  }
-} */
 .sliding_banner:hover {
-  .listen_button {
-    visibility: visible;
+  filter: grayscale(1);
+  transition: 1s;
+  #listen-button_screen {
+    display: flex;
+    transition: 1s;
   }
 }
+#listen_button_screen:hover {
+  opacity: 1;
+}
+
+
+ /* banner details */
+.banner_text {
+  padding: 2em;
+  bottom: 0px;
+}
+.b {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.b-1 {
+  background-color: #08102c;
+  padding: 1.2em;
+  color: white;
+  align-items: center;
+  gap: 1em;
+}
+#img1 {
+  border-radius: 5%;
+  width: 45%;
+}
+
+.b-2 {
+  background-color: rgb(255, 232, 217);
+  padding: 1.2em;
+  gap: 1em;
+  color: #08102c;
+}
+#img2 {
+  width: 50%;
+  border-radius: 5%;
+  object-fit: contain;
+}
+
+
+
+
+
