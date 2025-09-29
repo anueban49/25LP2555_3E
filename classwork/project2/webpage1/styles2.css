@@ -3,10 +3,8 @@
     margin: 0;
     background-color: rgb(234, 239, 242);
     padding-left: 0%;
+    font-family: "Inter", sans-serif;
 }
-/* body {
-    gap: 5%;
-} */
 .header {
     width: 100vw;
     height: 1em;
@@ -36,11 +34,13 @@
 .main {
     margin: 0em 1em 0em 3em;
     border: dashed rgba(100, 100, 100, 0.367);
+    gap: 2%;
 }
 /* Promotion */
 .promotion {
+    padding: 25px 0px;
+    gap: 10px;
     width: 100%;
-    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -77,13 +77,14 @@
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
+h1, h2 {
+    color: rgb(89, 89, 89);
+}
 h1 {
     font-size: 44px;
     top: 5%;
 }
 h2 {
-    /* position:absolute;
-    top: 5%; */
     padding-left: 0%;
     font-size: 34px;
 }

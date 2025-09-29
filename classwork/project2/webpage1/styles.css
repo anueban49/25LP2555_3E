@@ -218,44 +218,55 @@ p4 {
 .media_desc {
   position: absolute;
   width: 100%;
-  bottom: 38px;
-  left: 47px;
+  bottom: 1em;
+  left: 1em;
   display: flex;
   align-items: center;
   gap: 20px;
-  font-size: 1.5em;
+  font-size: 0.5em;
 }
 media_name {
   color: white;
 }
 .stream_button {
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: white;
   color: black;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .stream_button:hover {
   cursor: pointer;
 }
 
 
-
+input[type="radio"] {
+  display: none;
+}
+input#poster1:checked ~ .bullets label[for="poster_1"]
 
 /* bullets*/
 
 .bullets {
   width: 100vw;
-  height: 48px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
-.bullet {
-  width: 1em;
-  height: 1em;
-  background-color: gray;
+.bullets label {
+  width: 8px;
+  aspect-ratio: 1/1;
+  background-color: rgb(167, 164, 164);
   border-radius: 50%;
-  margin-inline: 7px;
+  cursor: pointer;
+}
+.bullet:hover {
+  background-color: rgb(88, 86, 86);
+  scale: 102%;
+}
+.button:active {
+  
 }
 
 

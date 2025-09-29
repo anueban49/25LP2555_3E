@@ -1,0 +1,61 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 300%; /* 3 slides */
+}
+
+.banner {
+  flex: 1 0 100%;
+  height: 600px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Slide control via radio */
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+/* Bullet styles */
+.bullets {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.bullets label {
+  width: 12px;
+  height: 12px;
+  background-color: #999;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input#slide1:checked ~ .bullets label[for="slide1"],
+input#slide2:checked ~ .bullets label[for="slide2"],
+input#slide3:checked ~ .bullets label[for="slide3"] {
+  background-color: #333;
+}
