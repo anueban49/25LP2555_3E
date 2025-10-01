@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    background-color: rgb(234, 239, 242);
+    background-color: #F5F5F7;
     padding-left: 0%;
     font-family: "Inter", sans-serif;
 }
@@ -12,11 +12,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 24px;
     background-color: #F5F5F7CC;
 }
 .menu {
     background-color: transparent;
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 12px;
+line-height: 60px;
+letter-spacing: -0.28px;
+text-align: center;
+vertical-align: middle;
+
 }
 .notification_banner {
     width: 100%;
@@ -26,15 +35,19 @@
     align-items: center;
     padding: 1.5em;
     background-color: #FFFFFF;
+    font-family: Inter;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0px;
 }
 .header_bottom {
     width: 100vw;
     object-fit: fill;
 }
 .main {
-    margin: 0em 1em 0em 3em;
-    border: dashed rgba(100, 100, 100, 0.367);
-    gap: 2%;
+    margin: 0em 5vw;
+    gap: 80px;
 }
 /* Promotion */
 .promotion {
@@ -59,12 +72,27 @@
     overflow-x: scroll;
 }
 .promo_product {
-    width: 120px;
-    aspect-ratio: 1/1;
-    border: 1px dashed rgba(171, 171, 229, 0.435);
-    display: flex;
-    align-items: end;
-    justify-content: center;
+    width: 136;
+height: 146;
+padding-top: 16px;
+padding-right: 8px;
+padding-bottom: 16px;
+padding-left: 8px;
+gap: 16px;
+opacity: 1;
+border-radius: 18px;
+
+}
+p {
+    font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: center;
+vertical-align: middle;
+
 }
 .shelf_carousel {
     width: 100%;
@@ -81,61 +109,163 @@ h1, h2 {
     color: rgb(89, 89, 89);
 }
 h1 {
-    font-size: 44px;
-    top: 5%;
+    font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 44px;
+line-height: 52.01px;
+letter-spacing: 0px;
+vertical-align: middle;
+
 }
 h2 {
-    padding-left: 0%;
-    font-size: 34px;
+    font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0px;
+vertical-align: middle;
+
 }
 h1_1, h2_1{
     background: linear-gradient(90deg, #0090F7 0%, #BA62FC 50%, #F2416B 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .shelf_itembox {
-    top: 0%;
-    width: 250%;
+    width: fit-content;
     gap: 20px;
     display: flex;
-    flex-grow: 1;
     scroll-snap-type: x mandatory;
     scroll-snap-align: start;
 }
 .row-0>.products {
-    flex: 1 8 100%;
-    aspect-ratio: 25/24;
-    border-radius: 5%;
+    width: 480px;
+    height: 500px;
+    opacity: 1;
+    border-radius: 18px;
+}
+.row-0>.products:nth-child(1) {
+    background: url(./images/storepage/shelf1/store-card-50-holiday-iphone-pro-202411_GEO_US.png)  no-repeat center center;
+}
+.row-0>.products:nth-child(2) {
+    background: url(./images/storepage/shelf1/store-card-50-holiday-watch-s10-202411.png) no-repeat center center;
+}
+.row-0>.products:nth-child(4) {
+    background: url(./images/storepage/shelf1/store-card-50-holiday-macbook-pro-202411.jpg) no-repeat center center;
+    background-size: contain;
+}
+.row-0>.products:nth-child(3) {
+    background: url(./images/storepage/shelf1/store-card-50-holiday-ipad-mini-202411.png);
 }
 .products {
     position: relative;
-    gap: 25px;
-    background-color: rgb(255, 255, 255);
+    gap: 12px;
     box-shadow: 2px 4px 12px 0px #00000014;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 5em;
+    flex-direction: column;
+    padding: 30px;
+    background: #FFFFFF;
+    border-radius: 18px;
 }
+
 .products:hover {
     scale: 102%;
     transition: 0.5s ease-in-out;
     box-shadow: 2px 4px 12px 0px #0000006e;
 }
-.products:first-child {
-    width: 500px;
+
+#itemtag {
+    font-family: Inter;
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0px;
+vertical-align: middle;
+background-color: transparent;
+color: #B64400;
 }
-.row-1>.products {
-    width: 600px;
-    aspect-ratio: 4/5;
-    border-radius: 5%;
+#item_name {
+font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 26px;
+line-height: 32px;
+letter-spacing: 0.2px;
+vertical-align: middle;
+background-color: transparent;
 }
-/* .row-0 {
-    flex: 1 8 20%;
+#item_price {
+font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 20px;
+letter-spacing: 0px;
+vertical-align: middle;
+background-color: transparent;
+}
+.colorpicks {
+    width: 253;
+    height: 58;
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    gap: 8px;
+    justify-content: center;
+    background-color: transparent;
+}
+#color-pick-bullet {
+    width: 8px;
     aspect-ratio: 1/1;
-    border: solid black;
+    object-fit: cover;
+    border: 2px transparent 50%;
 }
-.row-1 {
-    flex: 1 8 20vw;
-    aspect-ratio: 4/3;
-} */
+
+.row-1>.products {
+    width: 313px;
+    height: 500px;
+    opacity: 1;
+    border-radius: 18px;
+}
+.row-2>.products {
+   
+}
+.row-3>.products {
+    width: 480px;
+    height: 500px;
+
+}
+.shelf-banner {
+    width: 400px;
+    height: 500px;
+    padding: 30px;
+    border: 18px;
+    box-shadow: 2px 4px 12px 0px #00000014;
+}
+#ad1 {
+    background: url(./images/storepage/shelf2/airpods_promax.jpg) no-repeat center center;
+    background-size: cover;
+    border: 18px;
+}
+#ad2 {
+    background: url(./images/storepage/shelf3/1.jpg) no-repeat center center;
+    background-size: cover;
+    border: 18px;
+}
+.row-1 .products #inbox_product-img:nth-child(n + 2):nth-child(-n+5) {
+    width: 230px;
+    height: 230px;
+    align-self: center;
+}
+
+
+
+.row-3>.products:nth-child(1) {
+    background: url(./images/storepage/shelf4/1.png) cover no-repeat center center;
+    background-size: cover;
+
+}
+
