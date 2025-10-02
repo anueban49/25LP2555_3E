@@ -285,7 +285,7 @@ input#poster1:checked ~ .bullets label[for="poster_1"]
 }
 .slider_box:hover {
   animation-play-state: paused;
-  filter: grayscale(1);
+  transition: 1s;
 }
 
 .sliding_banner {
@@ -294,10 +294,9 @@ input#poster1:checked ~ .bullets label[for="poster_1"]
   flex: 1 0 25%;
   display: flex;
 }
-.sliding_banner .slider_box:hover {
-  filter: grayscale(0%);
+.slider_box *:hover {
+  filter: grayscale(100%);
 }
-
 #listen-button_screen {
   position: absolute;
   width: 100%;
@@ -313,7 +312,7 @@ input#poster1:checked ~ .bullets label[for="poster_1"]
   color: black;
 }
 .sliding_banner:hover {
-  filter: grayscale(1);
+  filter: none;
   transition: 1s;
   #listen-button_screen {
     display: flex;
