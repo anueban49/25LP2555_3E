@@ -15,6 +15,10 @@
     gap: 24px;
     background-color: #F5F5F7CC;
 }
+/* .main {
+    display: flex;
+    flex-direction: column;
+} */
 .menu {
     background-color: transparent;
     font-family: Inter;
@@ -99,8 +103,8 @@ vertical-align: middle;
     margin: 20px 0px;
     height: 600px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    /* flex-direction: column;
+    justify-content: space-evenly; */
     overflow-x: auto;
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -178,6 +182,8 @@ h1_1, h2_1{
 }
 
 #itemtag {
+    width: 100%;
+    height: 30px;
     font-family: Inter;
 font-weight: 700;
 font-size: 12px;
@@ -208,8 +214,8 @@ vertical-align: middle;
 background-color: transparent;
 }
 .colorpicks {
-    width: 253;
-    height: 58;
+    width: 253px;
+    height: 58px;
     display: flex;
     flex-direction: row;
     padding: 24px;
@@ -231,12 +237,16 @@ background-color: transparent;
     border-radius: 18px;
 }
 .row-2>.products {
-   
+   width: 313px;
+   height: 500px;
+   border-radius: 18px;
+
 }
 .row-3>.products {
     width: 480px;
     height: 500px;
-
+    border-radius: 18px;
+    background-color: #FFFFFF;
 }
 .shelf-banner {
     width: 400px;
@@ -255,17 +265,117 @@ background-color: transparent;
     background-size: cover;
     border: 18px;
 }
-.row-1 .products #inbox_product-img:nth-child(n + 2):nth-child(-n+5) {
+
+.row-1 .products #inbox_product-img {
     width: 230px;
     height: 230px;
     align-self: center;
 }
 
-
-
-.row-3>.products:nth-child(1) {
-    background: url(./images/storepage/shelf4/1.png) cover no-repeat center center;
-    background-size: cover;
-
+.shelf-banner {
+    border-radius: 18px;
+    object-fit: contain;
 }
 
+.row-3>.products:nth-child(1) {
+    background: url(./images/storepage/shelf4/1.png) no-repeat center center;
+    background-size: cover;
+}
+.row-3>.products:nth-child(3) {
+    background: url(./images/storepage/shelf4/3.png) no-repeat center center;
+    background-size: cover;
+}
+.row-3>.products:nth-child(4) {
+    background: url(./images/storepage/shelf4/4.png) no-repeat center center;
+    background-size: cover;
+}
+.grid_box {
+    width: 646px;
+    height: 500px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid_boxes {
+    width: 313;
+    height: 240;
+    border-radius: 18px;
+    background-color: #FFFFFF ;
+    padding: 30px;
+    font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 22px;
+line-height: 28px;
+letter-spacing: 0px;
+vertical-align: middle;
+}
+#itemtag_gray {
+    font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0px;
+vertical-align: middle;
+color: #6E6E73;
+background-color: transparent;
+}
+.row-4>.products {
+    width: 480px;
+    height: 500px;
+    border-radius: 18px;
+}
+.row-4>.products:nth-child(1) {
+    background: url(./images/storepage/shelf5/1.png) no-repeat center center;
+    background-size: cover;
+}
+.row-4>.products:nth-child(2) {
+    background: url(./images/storepage/shelf5/2.png) no-repeat center center;
+    background-size: cover;
+}
+.row-4>.products:nth-child(3) {
+    background: url(./images/storepage/shelf5/3.png) no-repeat center center;
+    background-size: cover;
+}
+.row-4>.products:nth-child(4) {
+    background: url(./images/storepage/shelf5/4.png) no-repeat center center;
+    background-size: cover;
+}
+.row-5>.products {
+    width: 400px;
+    height: 500px;
+    border-radius: 18px;
+}
+.row-5>.products:nth-child(1) {
+    background: url(./images/storepage/shelf6/1.png) no-repeat center center;
+    background-size: cover;
+}
+.row-5>.products:nth-child(2) {
+    background: url(./images/storepage/shelf6/2.png) no-repeat center center;
+    background-size: cover;
+}
+.row-5>.products:nth-child(3) {
+    background: url(./images/storepage/shelf6/3.png) no-repeat center center;
+    background-size: cover;
+}
+.row-5>.products:nth-child(4) {
+    background: url(./images/storepage/shelf6/4.png) no-repeat center center;
+    background-size: cover;
+}
+.row-5>.products:nth-child(5) {
+    background: url(./images/storepage/shelf6/5..png) no-repeat center center;
+    background-size: cover;
+}
+#offer_description {
+    font-family: Inter;
+font-weight: 400;
+font-size: 17px;
+line-height: 20px;
+letter-spacing: 0px;
+vertical-align: middle;
+background-color: transparent;
+}
+#whitefont {
+    color: white;
+}
