@@ -15,10 +15,7 @@
     gap: 24px;
     background-color: #F5F5F7CC;
 }
-/* .main {
-    display: flex;
-    flex-direction: column;
-} */
+
 .menu {
     background-color: transparent;
     font-family: Inter;
@@ -29,7 +26,6 @@ line-height: 60px;
 letter-spacing: -0.28px;
 text-align: center;
 vertical-align: middle;
-
 }
 .notification_banner {
     width: 100%;
@@ -52,6 +48,63 @@ letter-spacing: 0px;
 .main {
     margin: 0em 5vw;
     gap: 80px;
+    /* position: relative; */
+}
+.quick_help_panel {
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 226;
+    height: 100;
+    gap: 16px;
+    background-color: transparent;
+}
+.p-cs {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+info_cs {
+    display: flex;
+    flex-direction: column;
+}
+cs1 {
+    font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0px;
+}
+cs2 {
+    font-family: Inter;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0px;
+vertical-align: middle;
+/* text-decoration: underline; */
+text-decoration-style: solid;
+text-decoration-thickness: 0%;
+text-decoration-skip-ink: auto;
+color: #0066CC;
+}
+.img-cs {
+    width: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: contain;
+}
+#underline {
+    text-decoration: underline;
+}
+cs2:hover {
+    cursor:pointer;
 }
 /* Promotion */
 .promotion {
@@ -68,12 +121,11 @@ letter-spacing: 0px;
     padding-left: 0%;
 }
 .promotion_products {
-    width: fit-content;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 1em;
     overflow-x: scroll;
+    scrollbar-width: none;
 }
 .promo_product {
     width: 136;
@@ -180,7 +232,6 @@ h1_1, h2_1{
     transition: 0.5s ease-in-out;
     box-shadow: 2px 4px 12px 0px #0000006e;
 }
-
 #itemtag {
     width: 100%;
     height: 30px;
@@ -192,6 +243,35 @@ letter-spacing: 0px;
 vertical-align: middle;
 background-color: transparent;
 color: #B64400;
+}
+.itemtag-1 {
+    width: 100%;
+    height: 20px;
+    color: #B64400;
+    background: transparent;
+    font-family: Inter;
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0px;
+vertical-align: middle;
+}
+.color-pick_bullet:hover {
+    cursor: pointer;
+}
+.color-pick_bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.product-introduction, .name-price_box {
+    width: 80%;
+    height: 30%;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:transparent;
 }
 #item_name {
 font-family: Inter;
@@ -213,14 +293,29 @@ letter-spacing: 0px;
 vertical-align: middle;
 background-color: transparent;
 }
+#item_name2 {
+    background: transparent;
+    font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 18px;
+line-height: 20px;
+letter-spacing: 0px;
+vertical-align: middle;
+
+}
+#item_price2 {
+    background: transparent;
+}
 .colorpicks {
-    width: 253px;
-    height: 58px;
+    width: 250px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     padding: 24px;
     gap: 8px;
     justify-content: center;
+    align-items: center;
     background-color: transparent;
 }
 #color-pick-bullet {
@@ -297,11 +392,11 @@ background-color: transparent;
     grid-template-columns: repeat(2, 1fr);
 }
 .grid_boxes {
-    width: 313;
-    height: 240;
+    width: 100%;
+    height: 100%;
     border-radius: 18px;
     background-color: #FFFFFF ;
-    padding: 30px;
+    padding: 50px 30px 30px 30px;
     font-family: Inter;
 font-weight: 700;
 font-style: Bold;
@@ -397,30 +492,32 @@ line-height: 32px;
 letter-spacing: 0px;
 }
 .quick_links {
-    width: 125;
+    /* width: 125; */
 height: 40;
-angle: 0 deg;
-opacity: 1;
 gap: 8px;
 padding: 10px 12px;
 border: 1px solid black;
 border-radius: 999px;
 border-width: 1px;
 font-family: Inter;
-font-weight: 400;
+font-weight: 300;
 font-style: Regular;
-font-size: 14px;
-leading-trim: NONE;
+font-size: 13px;
 line-height: 20px;
 letter-spacing: 0px;
 text-align: center;
-vertical-align: middle;
-
+display: flex;
 }
-#link_arrow {
-    background-image: url(./images/text-images/image.png) no-repeat center center;
+.link_arrow {
+width: 0.5em;
+aspect-ratio: 1/1;
+    background: url(./images/text-images/arrowpointer.png) no-repeat center center;
     background-size: contain;
     background-color: transparent;
+
+}
+.quick_links:hover {
+    cursor: pointer;
 }
 footer_menu {
     display: flex;

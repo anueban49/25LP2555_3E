@@ -294,8 +294,11 @@ input#poster1:checked ~ .bullets label[for="poster_1"]
   flex: 1 0 25%;
   display: flex;
 }
-.slider_box *:hover {
+.slider_box:hover {
   filter: grayscale(100%);
+}
+.slider_box .sliding_banner:hover{
+  filter: none !important;
 }
 #listen-button_screen {
   position: absolute;
@@ -312,16 +315,13 @@ input#poster1:checked ~ .bullets label[for="poster_1"]
   color: black;
 }
 .sliding_banner:hover {
-  filter: none;
   transition: 1s;
   #listen-button_screen {
     display: flex;
     transition: 1s;
   }
 }
-#listen_button_screen:hover {
-  opacity: 1;
-}
+
 
 
  /* banner details */
