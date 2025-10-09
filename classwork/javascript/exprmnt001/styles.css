@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    row-gap: 20px;
+}
+.box {
+    width: 800px;
+    height: fit-content;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+p {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    text-align: center;
+    padding-top: 5px;
+}
+.numbox {
+    width: 20%;
+    height: auto;
+    font-size: 10px;
+    color: rgb(17, 38, 56);
+    background: inherit;
+    font-size: 20px;
+    border: solid rgb(50, 59, 59);
+    border-radius: 3px;
+}
+#result {
+    width: 40px;
+    aspect-ratio: 3/2;
+    border: solid black;
+}
