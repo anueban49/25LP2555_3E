@@ -1,2 +1,8 @@
-{
+{ "workbench.colorCustomizations": {
+    "editor.background": "#263328",
+    "editor.selectionBackground":"#6cffc7",
+    "editor.foreground": "#ecf5ff",
+    "textLink.foreground": "#718ca1",
+    "toolbar.hoverBackground": "#44d0ff50",
+}
 }
