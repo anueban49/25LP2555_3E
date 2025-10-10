@@ -46,7 +46,6 @@
 
 // 6. Хөрш элэментүүдээсээ их буюу орой элэментүүдийн тоог буцаа
 
-
 // const allScores = [59.5, 73, 87.6, 63, 90, 89];
 // let highScores = [];
 
@@ -55,10 +54,9 @@
 //         if (array[n] > 70) {
 //             highScores.push(array[n]);
 //         }
-//     } 
+//     }
 //     return highScores;
 // }
-
 
 // console.log(filter(allScores))
 
@@ -68,7 +66,7 @@
 
 // function createTwoDigitNum() {
 //     for (let n = 0; n < Num.length; n++) {
-//         for (let m = 0; m <Num.length; m++) {
+//         for (let m = 0; m < Num.length; m++) {
 //             let twoDigits = Num[n] * 10 + Num[m];
 //             twoDigitNum.push(twoDigits);
 //         }
@@ -78,32 +76,118 @@
 
 // console.log(twoDigitNum.length);
 
-
-
 // 8. Массив болон тоо өгөгдөв. Нийлбэр нь өгөгдсөн тоотой тэнцүү байдаг хосын тоог ол
-const idealSum = 49;
-const numbers = [ 22, 39, 26, 48, 1, 30, 9, 11, 28, 21 ];
-let idealNumbers =[];
-function shuffleAdd(Array) {
-    for (let x = 0; x < Array.length; x++) {
-        for (let y = 0; y < Array.length; y++) {
-            let sum = numbers[x] + numbers[y];
-        }
-    } idealNumbers.push(sum);
-}
 
-console.log
+// const arr = [1, 2, 3, 4, 5]; //pair possibility total 10
+// let sum = [];
 
+// function createIdealSum(arr) {
+//     for (let n = 0; n < arr.length; n++) {
+//         for (let m = 0; m < arr.length; m++) {
+//             let sum = arr[n]  + arr[m];
+//         }
+//     }
+//     if (sum === 6) {
+//         return (arr[n, arr[m]])
+//     }
+
+// }
+
+// console.log(sum);
+
+// const arr = [4, 6, 78, 34, 45, 23, 99];
+
+// let sum;
+// function add(arr) {
+//   let sums = [];
+
+//   for (let n = 0; n <= arr.length; n++) {
+//     for (let m = 0; m <= arr.length; m++) {
+//       let sum = arr[n] + arr[m];
+//       if (sum === 40) {
+//         sums.push([arr[n], arr[m]]);
+//       }
+//     }
+//   }
+
+//   return sums;
+// }
+// console.log(add(arr));
 
 // 9. Өгөгдсөн 2 массивийн огтлолцлыг ол
-// 10. Өгөгдсөн массивийн сөрөг тоонуудыг зүүн талд нь байрлуул
-// 11. Дараалсан тоонуудаас бүрдэх массив өгөгдөх байсан боловч 1 тоо нь дутуу байв. Тэр тоог ол
-
-// sorting
-// const e = [];
-// let temp;
-// for (i = 0; i < e.length; e++) {
-//     if (e[i] < e[i + 1],
-//         e[i] = temp
-//     )
+// function compare(a, b) {
+//     if (a === b) {
+//         return true;
+//     } else {
+//         return false;
+//     }
 // }
+
+// const arr1 = [17, 83, 460, 8, 8, 7, 12, 63, 4, 78, 2];
+// const arr2 = [8, 27 ,36 ,49, 78 ,6 ,34, 7, 863, 2];
+// function findSameValue(arr1, arr2) {
+
+//     let sameValues = [];
+//     for (let i = 0; i < arr1.length; i++) {
+//         for (let j = 0; j < arr2.length; j++) {
+//             if (arr1[i] === arr2[j] && !sameValues.includes(arr1[i])) {
+//             sameValues.push(arr1[i]);
+//         }
+//     }
+// }
+//     return sameValues;
+// }
+// console.log(findSameValue(arr1, arr2));
+
+// 10. Өгөгдсөн массивийн сөрөг тоонуудыг зүүн талд нь байрлуул
+const numbers = [10, 21, -6, 45, -2, 0, 3, 47, -19, 28];
+function sortnegativesLeft(arr) {
+  const negatives = arr.filter((num) => num <= 0);
+  const nonNegatives = arr.filter((num) => num >= 0);
+  return [...negatives, ...nonNegatives];
+}
+
+const sorted = sortnegativesLeft(numbers);
+console.log(sorted);
+
+// 11. Дараалсан тоонуудаас бүрдэх массив өгөгдөх байсан боловч 1 тоо нь дутуу байв. Тэр тоог ол
+const N = [1, 2, 4, 5, 6];
+function findMissingValue(arr) {
+  for (i = 0; i < arr.length - 1; i++) {
+    if (arr[i] + 1 !== arr[i + 1]) {
+      return arr[i] + 1;
+    }
+  }
+}
+
+// 1. Count Occurrences
+// Problem: Count how many times a number appears in an array
+function count(arr) {
+    const temp =
+    let number
+    if (arr[i] === arr[j]) {
+    const temp === arr[i]}
+}
+// 2. Check if Number Exists
+// Problem: Return true if a number exists in the array
+
+// 3. Find Second Largest
+// Problem: Find the second largest number in an array
+
+// 4. Rotate Array
+// Problem: Rotate array right by k positions
+
+// 5. Remove Duplicates (preserve order)
+// Problem: Remove duplicate numbers while keeping first occurrence
+
+// 6. Factorial Sum
+// Problem: Return sum of factorials of each number in array
+
+// 7. Array Rotation Check
+// Problem: Check if arr2 is rotation of arr1
+
+// 8. Merge Two Sorted Arrays
+// Problem: Merge two sorted arrays into one sorted array
+
+// 9. Diagonal Sum of Matrix
+// Problem: Calculate sum of main diagonal in a square matrix
