@@ -78,32 +78,79 @@
 
 // console.log(twoDigitNum.length);
 
-
+// function count(arr, num) {
+//     let count = 0;
+//     for (i = 0; i < arr.length; i++) {
+//         for (j = 0; j < arr.length; j++) {
+//             count++;
+//         }
+//     }
+// }
 
 // 8. Массив болон тоо өгөгдөв. Нийлбэр нь өгөгдсөн тоотой тэнцүү байдаг хосын тоог ол
-const idealSum = 49;
-const numbers = [ 22, 39, 26, 48, 1, 30, 9, 11, 28, 21 ];
-let idealNumbers =[];
-function shuffleAdd(Array) {
-    for (let x = 0; x < Array.length; x++) {
-        for (let y = 0; y < Array.length; y++) {
-            let sum = numbers[x] + numbers[y];
-        }
-    } idealNumbers.push(sum);
-}
-
-console.log
 
 
-// 9. Өгөгдсөн 2 массивийн огтлолцлыг ол
+// function compare(arr, num) {
+//     let count = 0;
+//     for (i = 0; i < arr.length; i ++) {
+//         for (j = 0; j + 1 < arr.length; j ++) {
+//             if (arr[i] + arr[j] === num) {
+//                 count++;
+//             }
+//         }
+//     }
+//     return count;
+// }
+// console.log(compare([9, 18, 11, -40, 13, 53, 44, 29, 8, 4, 32, 21], 27));
+
+// // 9. Өгөгдсөн 2 массивийн огтлолцлыг ол
+// function compare(a, b) {
+//     return (a === b);
+// }
+// function intersectNum(arr1, arr2) {
+//     let count = 0;
+//     for (i = 0; i < arr1.length; i ++) {
+//         for (j = 0; j < arr2.length; j++) {
+//             if (compare(arr1[i], arr2[j]));
+//             count++;
+//         }
+//     }
+//     return(count)
+// }
+// console.log(intersectNum(compare(
+//     [91,3,24,0,89,6,3,4,8,6,2,30,8,6,4,8,1,27,6]
+//     [23,87,4,87,4,8,7,2,647,62,7,83,74,10,9,34]
+// )));
+
 // 10. Өгөгдсөн массивийн сөрөг тоонуудыг зүүн талд нь байрлуул
+// function sort(arr) {
+//     let temp = [];
+//     for (i = 0; i < arr.length; i++) {
+//         if (arr[i] < 0) {
+//             temp.push(arr[i]);
+//         }
+//     }
+//     const nonNegatives = arr.filter(num => num >=0);
+//     const mergedArray = [...temp, ...nonNegatives];
+//     return mergedArray;
+// }
+// console.log(sort([8, 31, -7, -2,6,-4,0,-8,27]));
+
+// another simples way to do it
+function sort(arr) {
+    let nonNegatives = arr.filter(num => num >= 0);
+    let negatives = arr.filter(num => num < 0);
+    const mergedArray = [...negatives, ...nonNegatives];
+    return mergedArray;
+}
+console.log(sort([8, 31, -7, -2,6,-4,0,-8,27]));
+
 // 11. Дараалсан тоонуудаас бүрдэх массив өгөгдөх байсан боловч 1 тоо нь дутуу байв. Тэр тоог ол
 
-// sorting
-// const e = [];
-// let temp;
-// for (i = 0; i < e.length; e++) {
-//     if (e[i] < e[i + 1],
-//         e[i] = temp
-//     )
-// }
+function fillMissingNum (arr){
+    if (sequence.false) {
+        findNum();
+        arr.push(findNum());
+    }
+    return arr;
+}
