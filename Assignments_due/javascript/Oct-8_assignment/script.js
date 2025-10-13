@@ -140,38 +140,55 @@
 // console.log(findSameValue(arr1, arr2));
 
 // 10. Өгөгдсөн массивийн сөрөг тоонуудыг зүүн талд нь байрлуул
-const numbers = [10, 21, -6, 45, -2, 0, 3, 47, -19, 28];
-function sortnegativesLeft(arr) {
-  const negatives = arr.filter((num) => num <= 0);
-  const nonNegatives = arr.filter((num) => num >= 0);
-  return [...negatives, ...nonNegatives];
-}
+// const numbers = [10, 21, -6, 45, -2, 0, 3, 47, -19, 28];
+// function sortnegativesLeft(arr) {
+//   const negatives = arr.filter((num) => num <= 0);
+//   const nonNegatives = arr.filter((num) => num >= 0);
+//   return [...negatives, ...nonNegatives];
+// }
 
-const sorted = sortnegativesLeft(numbers);
-console.log(sorted);
+// const sorted = sortnegativesLeft(numbers);
+// console.log(sorted);
 
-// 11. Дараалсан тоонуудаас бүрдэх массив өгөгдөх байсан боловч 1 тоо нь дутуу байв. Тэр тоог ол
-const N = [1, 2, 4, 5, 6];
-function findMissingValue(arr) {
-  for (i = 0; i < arr.length - 1; i++) {
-    if (arr[i] + 1 !== arr[i + 1]) {
-      return arr[i] + 1;
-    }
-  }
-}
+// // 11. Дараалсан тоонуудаас бүрдэх массив өгөгдөх байсан боловч 1 тоо нь дутуу байв. Тэр тоог ол
+// const N = [1, 2, 4, 5, 6];
+// function findMissingValue(arr) {
+//   for (i = 0; i < arr.length - 1; i++) {
+//     if (arr[i] + 1 !== arr[i + 1]) {
+//       return arr[i] + 1;
+//     }
+//   }
+// }
 
 // 1. Count Occurrences
 // Problem: Count how many times a number appears in an array
-function count(arr) {
-    const temp =
-    let number
-    if (arr[i] === arr[j]) {
-    const temp === arr[i]}
-}
+
+// function countOccurences(arr, n) {
+//   let count = 0;
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i] === n) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(countOccurences(
+//   [7, 1, 6, 3 ,4 ,8, 1, 6, 4, 7, 8, 9, 1, 2, 6, 3, 9, 4, 8, 2], 7
+// ));
 // 2. Check if Number Exists
+// function check(arr, num) {
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i] === num) {
+//       return true;
+//     } 
+//   } return false;
+// }
+// console.log(check(
+//   [8,7,3,4,1,8,3,6,4,2,8,7,2], 7
+// ));
 // Problem: Return true if a number exists in the array
 
-// 3. Find Second Largest
+// 3. Find Second Largest 
 // Problem: Find the second largest number in an array
 
 // 4. Rotate Array
@@ -191,3 +208,9 @@ function count(arr) {
 
 // 9. Diagonal Sum of Matrix
 // Problem: Calculate sum of main diagonal in a square matrix
+function sortStrings(arr) {
+  return arr.sort();
+}
+sortStrings([
+  'ashdgf', 'ailegr','irutnt' 'iuweyri', 'sahvchsva', 'wiuegri', 'iuweyruih'
+]);
