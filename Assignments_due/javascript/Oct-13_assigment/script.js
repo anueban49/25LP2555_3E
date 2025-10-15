@@ -37,6 +37,13 @@ console.log(sortedArr[arr.length - 1 - 1]);
 // 4. Rotate Array
 // Problem: Rotate array right by k positions
 
+function rotateByKtoLeft(arr, k) {
+    return arr.slice(k).concat(arr.slice(0, k));
+}
+console.log(rotateByKtoLeft(
+    [1, 2, 3, 4, 5, 6]
+, 1));
+
 // 5. Remove Duplicates (preserve order)
 // Problem: Remove duplicate numbers while keeping first occurrence
 
