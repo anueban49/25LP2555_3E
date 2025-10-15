@@ -46,6 +46,9 @@ console.log(rotateByKtoLeft(
 
 // 5. Remove Duplicates (preserve order)
 // Problem: Remove duplicate numbers while keeping first occurrence
+function removeDup(arr) {
+   arr.filter((element) => )
+}
 
 // 6. Factorial Sum
 // Problem: Return sum of factorials of each number in array
