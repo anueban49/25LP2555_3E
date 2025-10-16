@@ -13,4 +13,6 @@ body {
     height: 300px;
     border-radius: 20px;
     background-color: #475388;
+    font-size: 20px;
+    color: white;
 }
