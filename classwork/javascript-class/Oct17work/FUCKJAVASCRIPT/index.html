@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <div class="task">
+        <p>Task 1</p>
+                <input class="numbox" id="num1" type="text" placeholder="input 1">
+                <input class="numbox" id="num2" type="text" placeholder="input 2">
+                <p id="sum_result"> </p>
+                <button onclick="add()" id="sum">Add</button>
+    </div>
+
+    <div class="task">
+        <p>Task 2</p>
+        <input type="text" placeholder="Age:">
+        <button onclick="check()">Check</button>
+        <p id="answer"></p>
+    </div>
+
+    <div class="task">
+        <p>Task 3</p>
+        <input id="mail" type="text" placeholder="Your email: ">
+        <button onclick="checkMail()"></button>
+        <p id="message"></p>
+    </div>
+
+    <div class="task">
+        <p>Task 4</p>
+        <input type="text" placeholder="Your text: ">
+        <button></button>
+        <p></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
