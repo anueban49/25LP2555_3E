@@ -12,12 +12,12 @@
                 <input class="numbox" id="num1" type="text" placeholder="input 1">
                 <input class="numbox" id="num2" type="text" placeholder="input 2">
                 <p id="sum_result"> </p>
-                <button onclick="add()" id="sum">Add</button>
+                <button id="sumUp">Add</button>
     </div>
 
     <div class="task">
         <p>Task 2</p>
-        <input type="text" placeholder="Age:">
+        <input id="age" type="text" placeholder="Age:">
         <button onclick="check()">Check</button>
         <p id="answer"></p>
     </div>
@@ -25,15 +25,15 @@
     <div class="task">
         <p>Task 3</p>
         <input id="mail" type="text" placeholder="Your email: ">
-        <button onclick="checkMail()"></button>
+        <button id="submitMail">Submit</button>
         <p id="message"></p>
     </div>
 
     <div class="task">
         <p>Task 4</p>
-        <input type="text" placeholder="Your text: ">
-        <button></button>
-        <p></p>
+        <input id="text" type="text" placeholder="Your text: ">
+
+        <p>Character count: <span id="charCount">0</span></p>
     </div>
 
     <script src="./script.js"></script>
