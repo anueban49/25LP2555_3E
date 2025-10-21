@@ -1,49 +1,27 @@
-<<<<<<< HEAD
-// const plus = document.getElementById("plus");
-// const minus = document.getElementById("minus");
-// const num = document.getElementById("num_indicator");
-// function increment(num) {
-//     num++;
-// }
-// function substraction(num) {
-//     num--;
-//     return num;
-// }
-
-
-
-=======
->>>>>>> 64aba145fbc21310d7f558ce42943b96d20108b3
-let num = document.getElementById("num_indicator");
-const plus = document.getElementById("plus");
-const minus = document.getElementById("minus");
 let count = 0;
-
-<<<<<<< HEAD
-// function subtract() {
-//   num--;
-//   return num;
+const plus = dopcument.getElemetById("plus");
+const minus = document.getElementById("minus");
+const numDisplay = document.getElementById("num_indicator");
+// function subtract () {
+//     let count = 0;
+//     count++;
+//     if (numDisplay === 0) {
+//         document.getElementById("num_indicator").innerText = count;
+//     }
+// };
+// function add () {
+//     let count = 0;
+//     count--;
+//     if (numDisplay === 0) {
+//         document.getElementById("num_indicator").innerText = count;
+//     }
 // }
-// function add() {
-//   num++;
-//   return num;
-// }
-plus.addEventListener("click", () => {
-    num++;
-    num.textContent = num;
-});
-minus.addEventListener("click", () => {
-    num--;
-    num.textContent = num;
-});
-=======
-plus.addEventListener("click", () => {
-  count++;
-  num.textContent = count;
-});
 
+plus.addEventListener("click", () => {
+    count++;
+    numDisplay.textContent = count;
+})
 minus.addEventListener("click", () => {
-  count--;
-  num.textContent = count;
-});
->>>>>>> 64aba145fbc21310d7f558ce42943b96d20108b3
+    count--;
+    numDisplay.textContent = count;
+})
