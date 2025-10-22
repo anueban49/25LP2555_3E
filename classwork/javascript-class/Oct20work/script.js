@@ -10,26 +10,34 @@ addBtn.addEventListener("click", () => {
     content.forEach(value => {
         const div = document.createElement("div");
         div.className = "item";
-        div.attributes = "data-category";
-        div.innerHTML = '<input class="checkbox" type="checkbox"/> <p class="task">' + value + '</p>'
+        div.innerHTML = 
+        '<input id="checkbox" type="checkbox" data-index=${index}/><p class="task">${value}</p><button id="deleteBtn" data-index=${index}>Delete</button>';
         listItems.appendChild(div);
     })
     input.value = "";
 })
-const taskItem = {
-    checkbox: false,
-    category: "Incomplete",
-}
-const checkbox = document.getElementsByClassName("checkbox");
-if (checkbox !== null) {
+const item = document.getElementById("item");
+const checkbox = document.getElementById("checkbox");
+const deleteBtn = document.getElementById("deleteBtn");
+if (checkbox) {
     checkbox.addEventListener("change", () => {
-        if (checkbox.checked) {
-            item.setAttribute("data-category", "done");
-        } else {
-            i
-        }
+        console.log("checkbox clicked!");
     })
 }
+if (item) {
+    const deleteBtn = document.getElementById("deleteBtn");
+    deleteBtn.addEventListener("click", () => {
+    item.remove();
+})
+}
+listItems.addEventListener("click", (event) => {
+    if (event.target.classList.contains("deleteBtn") {
+        const index = 
+    })
+})
+
+
+
 // checkbox.addEventListener("click", => {
 
 // })

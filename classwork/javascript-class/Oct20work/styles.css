@@ -37,12 +37,16 @@ h1 {
   letter-spacing: -2.5%;
   align-self: center;
 }
-input {
-  width: 280px;
-  height: 40px;
-  border: 1px dashed gray;
-  border-radius: 6px;
-  padding: 8px 16px;
+input [type="checkbox" i] {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(218, 218, 218);
+  cursor: pointer;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 button {
   width: 59px;
@@ -72,15 +76,23 @@ p {
   flex-direction: column;
   gap: 10px;
 }
-.checkbox {
-  border-radius: 50%;
+/* input[type="checkbox"] {
+  appearance: none;
+  background-color: rgb(199, 199, 199);
+  border: transparent;
+  border-radius: 20%;
   padding: 10px;
   width: 20px;
-  aspect-ratio: 1/1;
+  height: 20px;
 }
-.checkbox.checked {
-  display: none;
-}
+input[type="checkbox"]:after {
+  appearance: none;
+  background-color: #3c82f6;
+} */
+
+
+
+
 .categorizer {
   width: 100%;
   display: flex;
@@ -91,3 +103,6 @@ p {
   flex: 1;
 }
 
+button[id="deleteBtn"] {
+  cursor: pointer;
+}
