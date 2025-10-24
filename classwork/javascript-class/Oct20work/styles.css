@@ -37,24 +37,26 @@ h1 {
   letter-spacing: -2.5%;
   align-self: center;
 }
-input [type="checkbox" i] {
-  appearance: none;
-  height: 20px;
+input[type="text"] {
+  width: 280px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: gray dashed 1px;
+}
+.checkbox {
   width: 20px;
-  background-color: rgb(218, 218, 218);
-  cursor: pointer;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 20px;
+  background-color: rgb(217, 217, 217);
+  border: transparent;
 }
 button {
-  width: 59px;
   border-radius: 6px;
   padding: 8px 16px;
   border: transparent;
   background-color: #3c82f6;
   color: #ffffff;
+  flex: 1;
+  cursor: pointer;
 }
 
 .item {
@@ -64,45 +66,33 @@ button {
   padding: 10px 10px;
   display: flex;
   gap: 10px;
+  align-items: center;
+  justify-content: stretch;
 }
 p {
   font-size: 15px;
   color: #07060a;
   display: flex;
   align-items: center;
+  flex: 1;
 }
 #listItems {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-/* input[type="checkbox"] {
-  appearance: none;
-  background-color: rgb(199, 199, 199);
-  border: transparent;
-  border-radius: 20%;
-  padding: 10px;
-  width: 20px;
-  height: 20px;
+.deleteBtn {
+    width: 80px;
+    border-radius: 6px;
+    padding: 8px 16px;
+    border: transparent;
+    background-color: #fdc0c0;
+    color: #8b1e1e;
+    cursor: pointer;
 }
-input[type="checkbox"]:after {
-  appearance: none;
-  background-color: #3c82f6;
-} */
-
-
-
-
 .categorizer {
   width: 100%;
   display: flex;
   gap: 10px;
-}
-.categories {
-  width: fit-content;
   flex: 1;
-}
-
-button[id="deleteBtn"] {
-  cursor: pointer;
 }

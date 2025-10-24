@@ -1,18 +1,21 @@
 
-const a = Number(document.getElementById("num1").value);
-const b = Number(document.getElementById("num2").value);
-const c = Number(document.getElementById("num3").value);
+const container = document.querySelector(".container");
 
-function findTheHighestNum() {
-  if (a >= b && a >= c) {
-    return a;
+
+const leftScroll = document.getElementById("leftScroll");
+const rightScroll = document.getElementById("rightScroll");
+
+const gallery = document.getElementById("carousel");
+const galleryBox = Array.from(gallery.children);
+galleryBox.forEach((item, index) => {
+  item.arrayIndex = index;
+})
+console.log(galleryBox);
+const item =document.querySelectorAll(".item");
+function unhideElement() {
+  if (buttonLeft.clicked) {
+    for (i = 0; i < arr.length; i++) {
+      arr[i].style.display = ("block");
+    } 
   }
-  if (b >= a && b >= c) {
-    return b;
-  }
-  else return c;
-}
-function displayTheHighestNum() {
-  const highest = findTheHighestNum();
-  document.getElementById("highnum").textContent = highest;
 }

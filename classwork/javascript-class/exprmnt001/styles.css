@@ -1,41 +1,54 @@
 * {
     box-sizing: border-box;
-    margin: 0px;
+    margin: 0%;
+    background-color: black;
 }
 body {
-    padding: 30px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    row-gap: 20px;
-}
-.box {
-    width: 800px;
-    height: fit-content;
-    font-size: 20px;
-    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
-p {
-    font-size: 25px;
-    color: rgb(0, 0, 0);
+.container {
+    width: 940px;
+    height: 600px;
+    padding: 10px;
     display: flex;
-    text-align: center;
-    padding-top: 5px;
+    gap: 10px;
+    align-items: center;
+    overflow-x: hidden;
 }
-.numbox {
-    width: 20%;
-    height: auto;
-    font-size: 10px;
-    color: rgb(17, 38, 56);
-    background: inherit;
-    font-size: 20px;
-    border: solid rgb(50, 59, 59);
-    border-radius: 3px;
+#carousel {
+    width: fit-content;
+    display: flex;
+    gap: 10px;
 }
-#result {
-    width: 40px;
-    aspect-ratio: 3/2;
-    border: solid black;
+.item {
+    width: 920px;
+    height: 580px;
+    border: 2px solid aqua;
+    color: aqua;
+    padding: 10px;
+    border-radius: 10px; 
+    position: absolute;
+    display: none;
+}
+.operator {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+button {
+    width: 80px;
+    height: 50px;
+    border: 2px solid cyan;
+    color: cyan;
+    border-radius: 5px;
+}
+.unhide {
+    display: block;
 }
