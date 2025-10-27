@@ -1,0 +1,18 @@
+// --> Function types 
+// 1. Named Function
+// function functionName(parameters) {
+//   code to execute
+// };
+
+// 2.Function expression
+// const functionName = function(parameters) {
+//   code to execute
+// };
+// 3. Arrow Function (ES6+)
+// const functionName = (parameters) => {
+//   code to execute
+// };
+// 4. Immediately invoked function expression (IIFE)
+// (function() {
+//  code to execute
+// })();

@@ -6,11 +6,15 @@
 const buttonLeft = document.getElementById("buttonLeft");
 const buttonRight = document.getElementById("buttonRight");
 const gallery = document.getElementById("imageGallery");
+const item = document.querySelectorAll(".page");
 
 const galleryBox = Array.from(gallery.children);
 galleryBox.forEach((item, index) => {
   item.arrayIndex = index;
+  console.log(index);
 });
+//define the center index
+
 
 console.log(galleryBox);
 
@@ -25,14 +29,22 @@ buttonLeft.addEventListener("click", () => {
 buttonRight.addEventListener("click", () => {
   // i--;
   // gallery.style.transform = `translateX(${i * -300}px)`;
-  i = Math.min(i + 1, galleryBox.length - 1); // prevent going past last item
+  i = Math.min(i + 1, galleryBox.length); // prevent going past last item
   gallery.style.transform = `translateX(-${i * 300}px)`;
 });
+const selection = document.querySelector(".observer");
+// const observer = new IntersectionObserver((entries) => {
+//   if (entries[0].isIntersecting) {
+//     entries[0].target.classList.add(".scale");
+//   }
+// })
+// observer.observe(selection);
+
 
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    entry.target.classList.toggle('visible', entry.isIntersecting);
+    entry.target.classList.add("scale", entry.isIntersecting);
   });
 }, {
   root: document.querySelector('.container'), // your scrollable box
@@ -42,3 +54,5 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.page').forEach(page => {
   observer.observe(page);
 });
+
+
