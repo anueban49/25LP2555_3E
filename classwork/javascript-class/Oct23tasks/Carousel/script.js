@@ -44,15 +44,19 @@ const selection = document.querySelector(".observer");
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    entry.target.classList.add("scale", entry.isIntersecting);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("scale");
+    } else {
+      entry.target.classList.remove("scale")
+    }
   });
 }, {
-  root: document.querySelector('.container'), // your scrollable box
-  threshold: 0.5 // adjust based on how much of the element should be visible
+  root: document.querySelector('.observer'), 
+  threshold: 0.5,
 });
 
-document.querySelectorAll('.page').forEach(page => {
-  observer.observe(page);
+galleryBox.forEach(item => {
+  observer.observe(item);
 });
 
 
