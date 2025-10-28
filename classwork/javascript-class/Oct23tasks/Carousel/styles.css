@@ -46,6 +46,7 @@ body {
   align-items: center;
   scroll-snap-align: center;
   flex: 0 0 auto;
+  transition: 0.5s ease;
 }
 
 h3,
@@ -79,6 +80,5 @@ button:hover {
   background-color: transparent;
 }
 .scale {
-  scale: 1.1;
-  transition: 0.5s;
+  scale: 1.2;
 }

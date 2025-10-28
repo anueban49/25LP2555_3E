@@ -13,8 +13,6 @@ galleryBox.forEach((item, index) => {
   item.arrayIndex = index;
   console.log(index);
 });
-//define the center index
-
 
 console.log(galleryBox);
 
@@ -33,30 +31,26 @@ buttonRight.addEventListener("click", () => {
   gallery.style.transform = `translateX(-${i * 300}px)`;
 });
 const selection = document.querySelector(".observer");
-// const observer = new IntersectionObserver((entries) => {
-//   if (entries[0].isIntersecting) {
-//     entries[0].target.classList.add(".scale");
-//   }
-// })
-// observer.observe(selection);
+
 
 
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
+    // entry.target.classList.add("scale", entry.isIntersecting);
     if (entry.isIntersecting) {
-      entry.target.classList.add("scale");
+      entry.target.classList.add("scale")
     } else {
       entry.target.classList.remove("scale")
     }
   });
 }, {
   root: document.querySelector('.observer'), 
-  threshold: 0.5,
+  threshold: 0.5 
 });
 
-galleryBox.forEach(item => {
-  observer.observe(item);
+document.querySelectorAll('.page').forEach(page => {
+  observer.observe(page);
 });
 
 
