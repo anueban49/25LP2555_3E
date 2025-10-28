@@ -39,3 +39,9 @@ h1 {
 .finishScreen {
     background-color: rgb(66, 255, 66);
 }
+#gameplayScreen {
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+    text-align: center;
+}

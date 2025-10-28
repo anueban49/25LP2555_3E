@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+      font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+    margin: 10px;
+}
+h1 {
+    font-size: 40px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(59, 90, 108);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.holeContainer {
+    width: 900px;
+    height: 900px;
+    padding: 50px;
+    background-color: rgb(46, 130, 68);
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    border-radius: 100px;
+    
+}
+.hole {
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-color: rgb(54, 48, 48);
+    border-radius: 50%;
+    margin: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mole {
+    top: 100px;
+    width: 160px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rgb(165, 149, 115);
+    scale: 0;
+    transition: 0.4s ease-in-out;
+}
+
+#start {
+    width: 150px;
+    height: 70px;
+    border-radius: 50px;
+    border: transparent;
+    background-color: rgb(225, 65, 65);
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+}
+#start:hover {
+    background-color: rgb(73, 146, 90);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#sumInfoDuh {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+.mole:hover {
+    cursor: pointer;
+}
