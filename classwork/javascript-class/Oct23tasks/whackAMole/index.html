@@ -11,16 +11,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
 </head>
-<body>
+<body >
     <h1>Hole-y Mole-y Boom Bang</h1>
     <div id="sumInfoDuh">
         <div class="scoreDisplayed">
-            <h2>Total times bandit got hit: <h2 id="score"></h2></h2> 
+            <h2>Total times moles got hit:
+                <h2 id="score">0</h2>
+            </h2>
         </div>
         <div class="timeDisplayed">
-            <h2 >time:
-                <h2 id="timeDisplay">00:00</h2>
-                </h2>
+            <h2>time:
+                <h2 id="timer">15</h2>
+            </h2>
         </div>
     </div>
     <div class="holeContainer">
@@ -38,5 +40,9 @@
     </div>
     <button id="start" onclick="gameplay()">Start</button>
     <script src="./script.js"></script>
+    <div id="screen">TIME'S UP! 
+        <p>your score: <p id="scoreFinal">0</p></p>
+        <button id="replayBtn" onclick="gameplay()">Replay</button>
+    </div>
 </body>
 </html>

@@ -1,0 +1,61 @@
+🖱 Mouse Events
+These respond to mouse actions:
+
+click – when an element is clicked
+
+dblclick – double-click
+
+mousedown / mouseup – when mouse button is pressed/released
+
+mousemove – when the mouse moves
+
+mouseenter / mouseleave – when the mouse enters or leaves an element
+
+mouseover / mouseout – similar to enter/leave but bubble differently
+
+contextmenu – right-click
+
+⌨️ Keyboard Events
+Used for detecting key actions:
+
+keydown – when a key is pressed down
+
+keyup – when a key is released
+
+keypress – deprecated; use keydown instead
+
+📋 Form Events
+Triggered during form interactions:
+
+submit – when a form is submitted
+
+change – when an input value changes
+
+input – when user types into a field
+
+focus / blur – when an element gains or loses focus
+
+reset – when a form is reset
+
+📱 Touch Events (for mobile)
+touchstart – when a finger touches the screen
+
+touchmove – when a finger moves on the screen
+
+touchend – when a finger lifts off
+
+🌐 Window & Document Events
+React to changes in the browser or page:
+
+load – when the page finishes loading
+
+resize – when the window is resized
+
+scroll – when the user scrolls
+
+unload / beforeunload – when the page is about to be closed
+
+🎬 Media Events
+Useful for audio/video elements:
+
+play, pause, ended, volumechange, timeupdate
