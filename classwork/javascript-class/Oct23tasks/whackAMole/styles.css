@@ -76,3 +76,6 @@ body {
 .mole:hover {
     cursor: pointer;
 }
+.moleStyle {
+    scale: 1;
+}
