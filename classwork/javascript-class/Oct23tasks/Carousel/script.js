@@ -9,6 +9,7 @@ const gallery = document.getElementById("imageGallery");
 const item = document.querySelectorAll(".page");
 
 const galleryBox = Array.from(gallery.children);
+
 galleryBox.forEach((item, index) => {
   item.arrayIndex = index;
   console.log(index);
@@ -26,7 +27,7 @@ buttonLeft.addEventListener("click", () => {
 });
 buttonRight.addEventListener("click", () => {
   // i--;
-  // gallery.style.transform = `translateX(${i * -300}px)`;
+  // gallery.style.transform = `translateX(${i * -300}psx)`;
   i = Math.min(i + 1, galleryBox.length); // prevent going past last item
   gallery.style.transform = `translateX(-${i * 300}px)`;
 });
