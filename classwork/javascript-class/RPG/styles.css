@@ -18,7 +18,7 @@ main {
   border-radius: 50px;
   padding: 30px;
 }
-.area {
+.selectArea {
   width: 98%;
   height: 50%;
   display: grid;

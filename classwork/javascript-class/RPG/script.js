@@ -1,4 +1,4 @@
-const charSelect = document.querySelectorAll(".slime");
+
 const input = document.getElementById("input");
 
 if (input) {input.addEventListener("keydown", function(event) {
@@ -11,24 +11,15 @@ if (input) {input.addEventListener("keydown", function(event) {
 
 
 
-charSelect.forEach((character) => {
-
-character.addEventListener("click", () => {
-  character.classList.add("select");
-  let unSelect = document.querySelector(".select");
-  if (unSelect) {
-    unSelect.addEventListener("dblclick", () => {
-      character.classList.remove("select");
-    })
-  }
-})
-
-const mobSlime = {
-  hp : 100,
-  atk : 5,
+const charSelect = () => {
+  const selectArea = document.querySelector(".selectArea");
+  if (selectArea) {console.log("selectArea found")}
+  selectArea.addEventListener('click', (event) => {
+    if (event.target.classList.contains("slime")) {
+      console.log("slime selected")
+    }
+  })
 }
-console.log(mobSlime.hp)
-})
 
 function gameStart() {
   const screenOn = document.querySelector(".world");
